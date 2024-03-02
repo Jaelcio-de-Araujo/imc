@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de IMC - Modo Escuro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+  <div class="container">
+    <h1>Calculadora de IMC</h1>
+    <p>Descubra seu índice de massa corporal
+       e saiba mais sobre sua saúde.</p>
+
+    <form action="#">
+
+      <div class="input-group">
+        <label for="altura">Altura (cm):</label>
+        <input 
+        type="number" 
+        id="altura" 
+        name="altura" 
+        placeholder="Insira sua altura"
+        min="0"
+        max="3"
+        >
+      </div>
+
+      <div class="input-group">
+        <label for="peso">Peso (kg):</label>
+        <input 
+        type="number" 
+        id="peso" 
+        name="peso" 
+        placeholder="Insira seu peso"
+        min="0"
+        max="250"
+        >
+      </div>
+
+      <button type="submit" id="enviar">Calcular IMC</button>
+    </form>
+    <div class="resultado">
+      <h2>Resultado</h2>
+      <p>Seu IMC é: <span id="imc"></span></p>
+      <p>Que é um padrão: <span id="padrao"></span></p>
+      <p id="classificacao"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
